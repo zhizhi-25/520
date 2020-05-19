@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支支和济哥</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ffa5a5;
+background: linear-gradient(to bottom, #ffa5a5 0%,#ffd3d3 100%);
+        }
+        .chest{
+            width: 500px;
+            height: 500px;
+            margin: 0px auto;
+            position: relative;
+        }
+        .heart{
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(-90deg, #f50a45 0%,#d5093c 40%);
+            animation: beat 0.7s ease 0s normal infinite;
+        }
+        .side{
+           top: 100px;
+           width: 220px;
+           height: 220px;
+           border-radius: 220px;
+        }
+        .left{
+            left: 62px;
+        }
+        .right{
+            right: 62px;
+        }
+        .top
+        {
+            z-index: 3;
+        }
+        .center{
+         width: 210px;
+         height: 210px;
+         bottom: 100px;
+         left: 145px;
+         /*transform: rotate(45deg);*/
+        }
+        @keyframes  beat{
+            0%{
+                transform: scale(1) rotate(225deg);
+                box-shadow: 0 0 40px #d5093c;
+            }
+            50%{
+                transform: scale(1.1) rotate(225deg);
+                box-shadow: 0 0 70px #d5093c;
+            }
+            100%{
+                transform: scale(1) rotate(225deg);
+                box-shadow: 0 0 40px #d5093c;
+            }
+            
+        }
+        p{
+            font-size: 40px;
+            color: orange;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="chest">
+        <div class="heart side left top"></div>
+        <div class="heart center"></div>
+        <div class="heart side right"></div>
+        </div>
+    </div>
+    <p>520快乐呀，技术有待提高，有点丑，哈哈，但是我爱你啊</p>
+    <br>
+    <p>喜欢的话就来亲亲我！</p>
+</body>
+</html>
